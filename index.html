@@ -27,7 +27,12 @@
         <a href="#publications" class="hover:text-blue-600">Publications</a>
         <a href="#contact" class="hover:text-blue-600">Contact</a>
       </nav>
-      <a href="assets/Md_Rezoanur_Rahman_CV.pdf" class="px-3 py-1.5 rounded-lg bg-blue-600 text-white text-sm hover:bg-blue-700">Download CV</a>
+      <!-- DOWNLOAD CV (wired to your PDF) -->
+      <a href="assets/Md_Rezoanur_Rahman.pdf"
+         class="px-3 py-1.5 rounded-lg bg-blue-600 text-white text-sm hover:bg-blue-700"
+         download>
+        Download CV
+      </a>
     </div>
   </header>
 
@@ -40,7 +45,8 @@
           Hi, I’m <span class="text-blue-600">Md Rezoanur Rahman</span>.
         </h1>
         <p class="mt-4 text-slate-600 max-w-2xl">
-          Experimental materials scientist and textile engineer focused on phonon & electronic engineering of Mg₂Si thermoelectrics, polymer composites, neutron scattering, and filament manufacturing.
+          Experimental materials scientist and textile engineer focused on phonon & electronic engineering of Mg₂Si thermoelectrics,
+          polymer composites, neutron scattering, and filament manufacturing.
         </p>
         <div class="mt-6 flex flex-wrap gap-3">
           <a href="#projects" class="px-4 py-2 rounded-xl bg-blue-600 text-white hover:bg-blue-700">See projects</a>
@@ -52,21 +58,119 @@
         </div>
       </div>
       <div class="flex justify-center md:justify-end">
-        <!-- add your real photo later at /images/profile.jpg -->
-        <img src="images/profile.jpg" alt="Portrait" class="w-48 h-48 md:w-64 md:h-64 rounded-2xl object-cover ring-4 ring-blue-100" />
+        <!-- YOUR PORTRAIT (images/profile.jpg) -->
+        <img src="images/profile.jpg" alt="Md Rezoanur Rahman portrait"
+             class="w-48 h-48 md:w-64 md:h-64 rounded-2xl object-cover ring-4 ring-blue-100" />
       </div>
     </div>
   </section>
 
-  <!-- placeholders for next steps -->
-  <section id="about" class="max-w-6xl mx-auto px-4 py-16"><h2 class="text-2xl font-bold">About</h2></section>
+  <!-- ABOUT -->
+  <section id="about" class="max-w-6xl mx-auto px-4 py-16">
+    <h2 class="text-2xl font-bold">About</h2>
+    <p class="mt-4 text-slate-700">
+      I’m a doctoral researcher at the University of Wollongong (2022–2026), working on
+      <em>phonon/electronic engineering of carbon-modified Mg₂Si</em> to achieve ultra-low lattice thermal conductivity.
+      I combine solid-state synthesis, multi-instrument characterisation, and reproducible analysis to build
+      thermoelectric and polymer-based materials that move heat and charge the way we want.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
   <section id="skills" class="bg-slate-50 border-y border-slate-200/70">
-    <div class="max-w-6xl mx-auto px-4 py-16"><h2 class="text-2xl font-bold">Skills</h2></div>
+    <div class="max-w-6xl mx-auto px-4 py-16">
+      <h2 class="text-2xl font-bold">Core Skills</h2>
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-xl bg-white border border-slate-200">
+          <h3 class="font-semibold">Materials & Processes</h3>
+          <ul class="mt-3 list-disc list-inside text-sm text-slate-700 space-y-1">
+            <li>Solid-state synthesis; Spark Plasma Sintering (SPS)</li>
+            <li>Chemical polymer processing & composites</li>
+            <li>Filament manufacturing (3Devo); recycled-polymer workflows</li>
+          </ul>
+        </div>
+        <div class="p-6 rounded-xl bg-white border border-slate-200">
+          <h3 class="font-semibold">Characterisation</h3>
+          <ul class="mt-3 list-disc list-inside text-sm text-slate-700 space-y-1">
+            <li>XRD/Rietveld; SEM/EDS; TEM interpretation</li>
+            <li>Electrical conductivity & Seebeck; DSC; LFA</li>
+            <li>Neutron scattering (ANSTO); Micro-CT</li>
+          </ul>
+        </div>
+        <div class="p-6 rounded-xl bg-white border border-slate-200">
+          <h3 class="font-semibold">Collaboration & Data</h3>
+          <ul class="mt-3 list-disc list-inside text-sm text-slate-700 space-y-1">
+            <li>Experiment design, SOPs, risk assessments</li>
+            <li>Python/Origin analysis; clean data repos</li>
+            <li>Posters, manuscripts, figure prep</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </section>
-  <section id="projects" class="max-w-6xl mx-auto px-4 py-16"><h2 class="text-2xl font-bold">Projects</h2></section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="max-w-6xl mx-auto px-4 py-16">
+    <h2 class="text-2xl font-bold">Projects</h2>
+    <div class="mt-6 grid md:grid-cols-3 gap-6">
+      <article class="rounded-xl overflow-hidden border border-slate-200 bg-white">
+        <img src="images/project-thermoelectric.jpg" alt="Thermoelectric composites" class="h-40 w-full object-cover" />
+        <div class="p-5">
+          <h3 class="font-semibold">Carbon-Modified Mg₂Si Thermoelectrics</h3>
+          <p class="mt-1 text-sm text-slate-700">DFT-guided route to decouple heat & charge; Bi co-doping and lattice expansion/relaxation.</p>
+          <ul class="mt-2 text-xs text-slate-600 list-disc list-inside">
+            <li>SPS; XRD/Rietveld; SEM/EDS; Seebeck/σ/κ</li>
+            <li>Neutron experiments inform phonon DOS/GDOS</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="rounded-xl overflow-hidden border border-slate-200 bg-white">
+        <img src="images/project-filament.jpg" alt="3D printing filament" class="h-40 w-full object-cover" />
+        <div class="p-5">
+          <h3 class="font-semibold">Conductive Filament Manufacturing</h3>
+          <p class="mt-1 text-sm text-slate-700">PP + graphite/graphene via 3Devo; micro-CT dispersion/porosity mapping.</p>
+          <ul class="mt-2 text-xs text-slate-600 list-disc list-inside">
+            <li>Process windows & variability control</li>
+            <li>Electrical/thermal testing with uncertainty</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="rounded-xl overflow-hidden border border-slate-200 bg-white">
+        <img src="images/project-hyperthermia.jpg" alt="Magnetic hyperthermia" class="h-40 w-full object-cover" />
+        <div class="p-5">
+          <h3 class="font-semibold">Magnetic Hyperthermia Nanoparticles</h3>
+          <p class="mt-1 text-sm text-slate-700">NiFe₂O₄ nanoparticles; specific absorption rate benchmarking and safety considerations.</p>
+          <ul class="mt-2 text-xs text-slate-600 list-disc list-inside">
+            <li>JMMM 2023 publication</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- PUBLICATIONS -->
   <section id="publications" class="bg-slate-50 border-y border-slate-200/70">
-    <div class="max-w-6xl mx-auto px-4 py-16"><h2 class="text-2xl font-bold">Publications</h2></div>
+    <div class="max-w-6xl mx-auto px-4 py-16">
+      <h2 class="text-2xl font-bold">Selected Publications</h2>
+      <ul class="mt-6 space-y-4 text-sm">
+        <li class="p-4 rounded-xl border border-slate-200 bg-white hover:bg-slate-50">
+          <p class="font-medium">Magnetic properties of NiFe₂O₄ nanoparticles for hyperthermia</p>
+          <a class="underline text-slate-600" target="_blank" href="https://doi.org/10.1016/j.jmmm.2023.170859">doi:10.1016/j.jmmm.2023.170859</a>
+        </li>
+        <li class="p-4 rounded-xl border border-slate-200 bg-white hover:bg-slate-50">
+          <p class="font-medium">Newest AIP paper</p>
+          <a class="underline text-slate-600" target="_blank" href="https://doi.org/10.1063/5.0292504">doi:10.1063/5.0292504</a>
+        </li>
+      </ul>
+      <p class="mt-4 text-sm text-slate-600">
+        Full list on <a class="underline" target="_blank" href="https://scholar.google.com/citations?user=mVl-F_oAAAAJ">Google Scholar</a>.
+      </p>
+    </div>
   </section>
+
+  <!-- CONTACT -->
   <section id="contact" class="bg-slate-900 text-slate-50">
     <div class="max-w-6xl mx-auto px-4 py-16">
       <h2 class="text-2xl font-bold">Contact</h2>
@@ -88,6 +192,7 @@
       <p class="mt-10 text-xs text-slate-500">© <span id="year">2025</span> Md Rezoanur Rahman.</p>
     </div>
   </section>
+
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
