@@ -4,13 +4,90 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Md Rezoanur Rahman — Portfolio</title>
+  <meta name="description" content="Experimental materials scientist focused on thermoelectrics, polymers, and neutron scattering." />
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .gradient{
+      background:
+        radial-gradient(1200px 600px at 10% -10%, rgba(59,130,246,.15), transparent),
+        radial-gradient(900px 500px at 90% 10%, rgba(16,185,129,.12), transparent);
+    }
+  </style>
 </head>
-<body class="text-slate-900">
-  <main class="max-w-3xl mx-auto p-6">
-    <h1 class="text-3xl font-bold">Md Rezoanur Rahman</h1>
-    <p class="mt-2 text-slate-600">Materials Engineer · Thermoelectrics · Polymers</p>
-    <p class="mt-6">Hello! This is my starter page.</p>
-  </main>
+<body class="bg-white text-slate-900">
+  <!-- NAV -->
+  <header class="sticky top-0 z-50 backdrop-blur bg-white/80 border-b border-slate-200/70">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#home" class="font-semibold tracking-tight">Md Rezoanur Rahman</a>
+      <nav class="hidden md:flex gap-6 text-sm">
+        <a href="#about" class="hover:text-blue-600">About</a>
+        <a href="#skills" class="hover:text-blue-600">Skills</a>
+        <a href="#projects" class="hover:text-blue-600">Projects</a>
+        <a href="#publications" class="hover:text-blue-600">Publications</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+      </nav>
+      <a href="assets/Md_Rezoanur_Rahman_CV.pdf" class="px-3 py-1.5 rounded-lg bg-blue-600 text-white text-sm hover:bg-blue-700">Download CV</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="gradient">
+    <div class="max-w-6xl mx-auto px-4 py-16 md:py-24 grid md:grid-cols-[1.1fr,0.9fr] gap-10 items-center">
+      <div>
+        <p class="text-xs uppercase tracking-[0.2em] text-slate-500">Materials Engineer · Thermoelectrics · Polymers</p>
+        <h1 class="mt-3 text-4xl md:text-5xl font-extrabold leading-tight">
+          Hi, I’m <span class="text-blue-600">Md Rezoanur Rahman</span>.
+        </h1>
+        <p class="mt-4 text-slate-600 max-w-2xl">
+          Experimental materials scientist and textile engineer focused on phonon & electronic engineering of Mg₂Si thermoelectrics, polymer composites, neutron scattering, and filament manufacturing.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="#projects" class="px-4 py-2 rounded-xl bg-blue-600 text-white hover:bg-blue-700">See projects</a>
+          <a href="#publications" class="px-4 py-2 rounded-xl border border-slate-300 hover:bg-slate-50">View publications</a>
+        </div>
+        <div class="mt-6 flex gap-4 text-sm">
+          <a class="underline text-slate-600 hover:text-blue-700" href="mailto:rrezoan@gmail.com">rrezoan@gmail.com</a>
+          <span class="text-slate-400">· Bellambi, NSW · +61 480 241 588</span>
+        </div>
+      </div>
+      <div class="flex justify-center md:justify-end">
+        <!-- add your real photo later at /images/profile.jpg -->
+        <img src="images/profile.jpg" alt="Portrait" class="w-48 h-48 md:w-64 md:h-64 rounded-2xl object-cover ring-4 ring-blue-100" />
+      </div>
+    </div>
+  </section>
+
+  <!-- placeholders for next steps -->
+  <section id="about" class="max-w-6xl mx-auto px-4 py-16"><h2 class="text-2xl font-bold">About</h2></section>
+  <section id="skills" class="bg-slate-50 border-y border-slate-200/70">
+    <div class="max-w-6xl mx-auto px-4 py-16"><h2 class="text-2xl font-bold">Skills</h2></div>
+  </section>
+  <section id="projects" class="max-w-6xl mx-auto px-4 py-16"><h2 class="text-2xl font-bold">Projects</h2></section>
+  <section id="publications" class="bg-slate-50 border-y border-slate-200/70">
+    <div class="max-w-6xl mx-auto px-4 py-16"><h2 class="text-2xl font-bold">Publications</h2></div>
+  </section>
+  <section id="contact" class="bg-slate-900 text-slate-50">
+    <div class="max-w-6xl mx-auto px-4 py-16">
+      <h2 class="text-2xl font-bold">Contact</h2>
+      <p class="mt-2 text-slate-300">Email me or connect on LinkedIn. I’m open to collaborations and R&D roles.</p>
+      <div class="mt-6 grid md:grid-cols-3 gap-6 text-sm">
+        <div class="p-5 rounded-xl bg-slate-800 border border-slate-700">
+          <div class="text-slate-400">Email</div>
+          <a href="mailto:rrezoan@gmail.com" class="font-medium hover:underline">rrezoan@gmail.com</a>
+        </div>
+        <div class="p-5 rounded-xl bg-slate-800 border border-slate-700">
+          <div class="text-slate-400">Location</div>
+          <div class="font-medium">Bellambi, NSW, Australia</div>
+        </div>
+        <div class="p-5 rounded-xl bg-slate-800 border border-slate-700">
+          <div class="text-slate-400">LinkedIn</div>
+          <a href="https://www.linkedin.com/in/md-rezoanur-rahman-4ba60b212/" target="_blank" class="font-medium hover:underline">/in/md-rezoanur-rahman-4ba60b212/</a>
+        </div>
+      </div>
+      <p class="mt-10 text-xs text-slate-500">© <span id="year">2025</span> Md Rezoanur Rahman.</p>
+    </div>
+  </section>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
